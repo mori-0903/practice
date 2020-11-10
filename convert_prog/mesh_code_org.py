@@ -12,8 +12,10 @@ args = sys.argv
 indata = args[1]
 outdata = args[2] 
 
-outdata = os.path.join("./outcv",outdata)
+out_dir = "./outcv"
+os.makedirs(out_dir, exist_ok=True)
 
+outdata = os.path.join(out_dir,outdata)
 # filename="fv_oyabe.dat"
 
 # df = pd.read_csv("MAXALL_TIME.CSV",encoding="EUC-JP",skiprows=2)
