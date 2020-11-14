@@ -1,0 +1,2 @@
+#Twitterのアイコンの出し方
+span class="fa fa-twitter"></span>
