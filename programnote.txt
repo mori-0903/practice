@@ -14,3 +14,5 @@ inline-block⇒blockとinlineの中間
 none⇒非表示になる
 
 display: inline-block;
+
+  position: fixed;←スクロールしても位置が変わらない
