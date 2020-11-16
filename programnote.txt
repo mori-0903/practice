@@ -16,3 +16,4 @@ none⇒非表示になる
 display: inline-block;
 
   position: fixed;←スクロールしても位置が変わらない
+          : relative;←相対位置の配置（staticの時が基準）
