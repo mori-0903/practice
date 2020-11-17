@@ -17,3 +17,5 @@ display: inline-block;
 
   position: fixed;←スクロールしても位置が変わらない
           : relative;←相対位置の配置（staticの時が基準）
+
+flex-direction: column; 縦に並べたい要素の親要素に指定する
