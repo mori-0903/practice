@@ -19,3 +19,4 @@ display: inline-block;
           : relative;←相対位置の配置（staticの時が基準）
 
 flex-direction: column; 縦に並べたい要素の親要素に指定する
+margin: 0 auto; 中央寄せ
