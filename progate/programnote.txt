@@ -20,3 +20,31 @@ display: inline-block;
 
 flex-direction: column; 縦に並べたい要素の親要素に指定する
 margin: 0 auto; 中央寄せ
+
+
+----Ruby----
+puts "Hello World" #出力はputs
+----
+# コメントはpythonと同じ
+----
+puts 3 + 5 #演算子と数字の間に半角スペースが必要
+----
+puts "あ" + "い"　#文字もpythonと同じように足せる
+----
+# 変数はpythonと同様型宣言が必要ない。
+----
+# 文字列と整数を足す場合は
+age = 19
+puts "#{age}歳です"
+----
+# if文 ※インデントは必ずしも描く必要はないが、どのプログラムでも描くことは推奨されている
+if 条件式 1
+  処理
+elsif 条件式 2
+  処理
+else
+  処理
+end
+かつ(and) &&
+または(or) ||
+----
