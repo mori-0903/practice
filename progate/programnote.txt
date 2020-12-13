@@ -146,3 +146,25 @@ end
 スーパークラスもpythonと同様
 super(name: name,price: price)
 ----
+----Ruby on Rails----
+一度作ってみないと分からないかも？
+Railsチュートリアルもやってみる
+
+# CLI
+$rails new tweet_app(アプリケーション名)
+で開発に必要なフォルダやファイルが生成される。
+
+$rails server 
+サーバーを立ち上げることができる
+
+$rails generate controller home top
+トップページが自動で作られる
+
+#ルーティング
+config/routes.rbに定義され、
+get "URL" => "コントローラー名#アクション名"
+で描かれる。
+
+crss cssを効率的に書く文法
+
+画像はパブリックフォルダに置く
