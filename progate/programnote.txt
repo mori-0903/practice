@@ -79,4 +79,70 @@ pythonのようにリストの中に入れる事もできる。
 # シンボル
 :name #:（コロン）をつけることにより、クォーテーションで囲ったのと同じになる
 ※シンボルを使った場合は呼び出しも:（コロン）をつける必要がある。
+----
+# def(関数)
+def 関数
+処理
+end
+pythonに近い。endが必要。
 
+真偽値を出す場合は？をつけるのが慣習。
+def negative?(number)
+  return number < 0
+end
+
+def test(name:,age:)
+  puts "名前は#{name}"
+  puts "年齢は#{age}"
+end
+test(name:"もりやま",age:"25")
+のように引数を明記できる
+
+----
+# クラス
+class Test
+  attr_accessor シンボル(:testのようなもの(上に記述あり))
+end
+インスタンス生成↓
+test1 = Test.new
+test1.test = "てすと"　#←値を代入できる
+
+内部でメソッドを呼び出す↓
+class Test
+  attr_accessor シンボル
+  def aaa
+    puts "あああ"
+  end
+end
+test1 = Test.new
+test1.aaa -> "あああ"
+pythonと同様、self.変数名でインスタンス変数を扱うことができる
+
+class内で**initialize**メソッドを定義するとTest.newでインスタンスが生成された直後にinitializeメソッドが呼び出される。
+(pythonの**__init__()**とおなじ（？）)
+def initialize(name:, age:)　←コロン必要
+  self.name = name
+  self.age  = age
+end
+インスタンス生成で呼び出される↓
+test1 = Test.new(name:"もりやま", age:25)
+----
+# 別ファイルとして呼び出し(pythonでいうimport)
+test.rbというファイルだったら
+require "./test"
+test1 = Test.new(name:"もりやま", age:25)
+のように呼び出せる
+----
+# 入力受け付け（pythonでいうinput()）
+input = gets.chomp
+puts "入力は#{input}です"
+
+number = gets.chomp.to_i #整数(float)として読み込み
+
+----
+# クラスの継承
+class Moriyama < Test
+end
+スーパークラスもpythonと同様
+super(name: name,price: price)
+----
