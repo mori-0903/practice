@@ -168,3 +168,21 @@ get "URL" => "コントローラー名#アクション名"
 crss cssを効率的に書く文法
 
 画像はパブリックフォルダに置く
+
+# @
+@をつけて変数を定義するとビューファイル内でも使用することができる
+
+# DBを指示するためのファイル（マイグレーションファイル）作成コマンド
+$rails g model Post content:text
+
+# DBに変更を反映するコマンド
+$rails db:migrate
+
+# rails console
+post1 = Post.new(content: "aiueo")　#DBの"aiueo"作成
+post1.save #DB保存
+
+# views/layouts/application.html.erbの<%= yield %>
+各ビューファイルはここに保存される。（ヘッダーを共有できる）
+
+# link to
