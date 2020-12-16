@@ -185,4 +185,18 @@ post1.save #DB保存
 # views/layouts/application.html.erbの<%= yield %>
 各ビューファイルはここに保存される。（ヘッダーを共有できる）
 
-# link to
+# find_by
+post = Post.find_by(id:3) #idが3の投稿データを取得できる
+
+# link_to
+<%=link_to(@post.content,"posts/#{post.id}") %>
+リンクをつけることができる
+
+基本的な流れはroutes.rbで機能を追加した後に、controllerファイルで機能を定義、
+最終的にviewsフォルダに新しい機能を追加したhtmlファイルを追加していくという流れで作成していく。
+
+通常ルーティングファイルに追加する場合、getだが、フォームの値を受け取るときはpostで受け取る
+
+# form_tag
+form_tag(送信先のURL) do
+のように送信先のURLを指定する
