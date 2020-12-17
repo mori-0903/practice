@@ -159,13 +159,15 @@ $rails server
 
 $rails generate controller home top
 トップページが自動で作られる
+->ファイルはapp/views/homeに作成される
+
 
 #ルーティング
 config/routes.rbに定義され、
 get "URL" => "コントローラー名#アクション名"
 で描かれる。
 
-crss cssを効率的に書く文法
+# crss  #cssを効率的に書く文法
 
 画像はパブリックフォルダに置く
 
@@ -200,3 +202,14 @@ post = Post.find_by(id:3) #idが3の投稿データを取得できる
 # form_tag
 form_tag(送信先のURL) do
 のように送信先のURLを指定する
+
+# redirect_to("URL")　#コントローラーファイル
+URLへ飛ぶことができる
+
+# Post.all.order(created_at: :desc)
+並び替えできる。上の例だと作成日時から降順
+
+-----
+道場コースになるため、コミットがしづらくなるが、学びを書いていく
+progateだとやはり、スライド検索をすると何とかなってしまうため、自主的に試行錯誤して作成する必要がある気がする。
+railsコースを終わらせるまでやろうと思ったが、どうするか考える必要はある。
