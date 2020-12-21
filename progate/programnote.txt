@@ -219,3 +219,20 @@ rails g model テーブル名(単数形) カラム名:データ型　# モデル
 rails db:migrate #データベースに反映させる。（復習）
 道場コース終了。正直全く理解できていない気がする。
 -----
+
+-----rails-----
+コース6をやろうと思ったが、railsで一度自分のサイトを作ってみようと思う。
+
+railsチュートリアルで何か作ってみる。しかしこれもけっきょくprogateと同じ？
+一度やってみる
+
+sudo apt install rubyでインストールした。（wsl）
+pythonでいうanacondaのようなパッケージはあるのか
+gem install rails -v 6.0.3
+gem install　はpipみたいなもの？
+
+sudo apt install ruby-railties
+をする必要があるといわれたのでインストール
+
+rails 6.0.3をインストールする必要があったが、安定版をインストールしてしまったようなので、いったんリセットしたい。
+いろいろ試行錯誤した結果、dockerを使ってみることにした。
