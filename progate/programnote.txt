@@ -236,3 +236,12 @@ sudo apt install ruby-railties
 
 rails 6.0.3をインストールする必要があったが、安定版をインストールしてしまったようなので、いったんリセットしたい。
 いろいろ試行錯誤した結果、dockerを使ってみることにした。
+
+----docker----
+コンテナ：仮想環境そのもの
+docker:コンテナを動かすエンジン
+
+FROM ruby:2.5 #使用するイメージとバージョン
+RUN mkdir test
+
+書き方はbashに似てる
